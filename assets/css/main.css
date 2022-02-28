@@ -3409,6 +3409,7 @@ input, select, textarea {
 			}
 
 			#banner .logo .image {
+				background-color: white;
 				display: inline-block;
 				margin-right: 1em;
 			}
