@@ -4,5 +4,6 @@ Disallow: /node_modules/
 Disallow: /v1/
 Disallow: fileserver.py
 Disallow: /app/
+Disallow: /index.html
 
 Sitemap: https://www.dhime.in/sitemap.xml
