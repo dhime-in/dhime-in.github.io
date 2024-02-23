@@ -5,5 +5,8 @@ Disallow: /v1/
 Disallow: fileserver.py
 Disallow: /app/
 Disallow: /index.html
+Disallow: /privacy.html
+Disallow: /delete.html
+Disallow: /test.html
 
 Sitemap: https://www.dhime.in/sitemap.xml
