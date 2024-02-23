@@ -1,0 +1,10 @@
+include:
+  - node_modules/
+
+exclude:
+  - app/
+  - v1/
+  - .gitignore
+  - file_server.py
+  - package.json
+  - package_lock.json
