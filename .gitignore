@@ -1,4 +1,5 @@
 file_server.py
 app/canvaskit
 app/src
+app/node_modules
 v1/
