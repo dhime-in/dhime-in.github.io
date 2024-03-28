@@ -1,9 +1,13 @@
 include:
   - node_modules/
+  - app/node_modules/
 
 exclude:
-  - app/
   - v1/
+  - app/.last_build_id
+  - app/version.json
+  - app/package.json
+  - app/package-lock.json
   - .gitignore
   - file_server.py
   - package.json
