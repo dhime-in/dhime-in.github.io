@@ -5892,7 +5892,7 @@
           }
         }
       );
-      console.log(`metadata: ${metadata.height}, ${metadata.width} ${metadata.duration} ${metadata.videoCodecID}`);
+      console.log(`metadata: ${metadata.height}, ${metadata.width}, ${metadata.duration}, ${metadata.timestampScale}, ${metadata.videoCodecID}`);
       return metadata;
     }
     onReady() {
@@ -5931,7 +5931,7 @@
           case "Block":
             let block = ebml.tools.ebmlBlock(elm.data);
             block.frames.forEach((frame) => {
-              let frameTime = (block.timecode + clusterTimeStamp) * this.#metadata.timestampScale / 1e6;
+              let frameTime = (block.timecode + clusterTimeStamp) * (this.#metadata.timestampScale / 1e3);
               this.#onChunk(new EncodedVideoChunk({
                 type: block.keyframe ? "key" : "delta",
                 // clusterTimeStamp & timestampScale is in nano secs, timestamp arg expects micro seconds
