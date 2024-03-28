@@ -3,8 +3,6 @@ include:
 
 exclude:
   - v1/
-  - app/.last_build_id
-  - app/version.json
   - app/package.json
   - app/package-lock.json
   - .gitignore
