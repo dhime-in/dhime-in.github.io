@@ -1,5 +1,5 @@
 $theme-colors: (
-  "primary":    #FF6600,
+  "primary": #FF6600,
   "primary-light": #F0A070
   /*
   "secondary":  $secondary,
@@ -15,8 +15,9 @@ $theme-colors: (
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
-$fa-font-path:"./node_modules/font-awesome/fonts";
+$fa-font-path: "./node_modules/font-awesome/fonts";
 @import "./node_modules/font-awesome/scss/font-awesome";
+
 .icon-user {
   @extend .fa;
   @extend .fa-user;
