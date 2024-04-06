@@ -1,6 +1,6 @@
 include:
   - node_modules/
-  - .well-known/
+  - .well-known
 
 exclude:
   - v1/
