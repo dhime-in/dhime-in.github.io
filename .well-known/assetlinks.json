@@ -7,7 +7,9 @@
             "namespace": "android_app",
             "package_name": "in.dhime.dhime",
             "sha256_cert_fingerprints": [
-                "5C:68:B6:47:A8:1C:BF:56:EE:F0:BB:BF:8D:25:1C:D6:2C:4A:DC:3A:2A:4F:0A:A4:2C:25:82:12:FC:F8:06:A7"
+                "5C:68:B6:47:A8:1C:BF:56:EE:F0:BB:BF:8D:25:1C:D6:2C:4A:DC:3A:2A:4F:0A:A4:2C:25:82:12:FC:F8:06:A7",
+                "80:39:7A:FF:90:A5:87:CA:E8:76:D2:67:00:27:05:E2:22:6E:A1:C1:C5:3B:B3:E2:12:94:54:69:74:E8:40:A7",
+                "81:F1:CA:C2:33:07:E2:27:B2:FF:09:EA:AD:6E:D2:AC:71:39:44:15:FD:94:D8:C7:FF:BA:DC:5D:B3:15:8B:20"
             ]
         }
     }
