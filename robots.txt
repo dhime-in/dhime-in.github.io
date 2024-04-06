@@ -8,5 +8,7 @@ Disallow: /index.html
 Disallow: /privacy.html
 Disallow: /delete.html
 Disallow: /test.html
+Disallow: /android_app.html
+Disallow: /.well-known/
 
 Sitemap: https://www.dhime.in/sitemap.xml
