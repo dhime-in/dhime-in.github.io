@@ -1,36 +1,36 @@
 // Snippet from https://developer.mixpanel.com/docs/javascript-quickstart#installation-option-2-html
 // Event name changed per our requirement
-(function(f, b) {
+(function (f, b) {
     if (!b.__SV) {
         var e, g, i, h;
         window.mixpanel = b;
         b._i = [];
-        b.init = function(e, f, c) {
+        b.init = function (e, f, c) {
             function g(a, d) {
                 var b = d.split(".");
                 2 == b.length && (a = a[b[0]], d = b[1]);
-                a[d] = function() {
+                a[d] = function () {
                     a.push([d].concat(Array.prototype.slice.call(arguments, 0)))
                 }
             }
             var a = b;
             "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel";
             a.people = a.people || [];
-            a.toString = function(a) {
+            a.toString = function (a) {
                 var d = "mixpanel";
                 "mixpanel" !== c && (d += "." + c);
                 a || (d += " (stub)");
                 return d
             };
-            a.people.toString = function() {
+            a.people.toString = function () {
                 return a.toString(1) + ".people (stub)"
             };
             i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
             for (h = 0; h < i.length; h++) g(a, i[h]);
             var j = "set set_once union unset remove delete".split(" ");
-            a.get_group = function() {
+            a.get_group = function () {
                 function b(c) {
-                    d[c] = function() {
+                    d[c] = function () {
                         call2_args = arguments;
                         call2 = [c].concat(Array.prototype.slice.call(call2_args, 0));
                         a.push([e, call2])
@@ -56,16 +56,14 @@
 // but it's recommended you remove it for production
 
 var productionHostname = 'dhime.in';
-var devMixpanelToken = '3b49513a88ec717b99eadccd92b7e6bf';
-var prodMixpanelToken = 'df813c23f8a6e8c14891f09ff33c645d';
+var devMixpanelToken = '1c888e831f4d078dbcef782e0e9e4e91';
+var prodMixpanelToken = 'f1e90fa2acda01af1aa0ef5cb1a6e23a';
 
 // If the hostname is anything other than the production domain,
 // initialize the Mixpanel library with the Development Project Token
 if (window.location.hostname.toLowerCase().search(productionHostname) < 0) {
-	mixpanel.init(devMixpanelToken, {
-		debug: true
-	});
+    mixpanel.init(devMixpanelToken, { debug: true, track_pageview: "full-url", });
 } else {
-	mixpanel.init(prodMixpanelToken);
+    mixpanel.init(prodMixpanelToken, { track_pageview: "full-url", },);
 }
 mixpanel.track('Page View');
