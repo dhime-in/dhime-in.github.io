@@ -2,7 +2,7 @@ User-agent: *
 Disallow: 
 Disallow: /node_modules/
 Disallow: /v1/
-Disallow: fileserver.py
+Disallow: /fileserver.py
 Disallow: /app/
 Disallow: /index.html
 Disallow: /privacy.html
