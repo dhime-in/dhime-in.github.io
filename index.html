@@ -174,6 +174,9 @@
     </div>
 
     <div class="bg-body pt-3">
+      <!--
+        <video class="lazyload lazyloded col-12" preload="auto" muted data-autoplay loop playsinline id="myVideo">
+      -->
       <video class="col-12" autoplay muted loop id="myVideo">
         <source src="https://d3by7jvwdbqhex.cloudfront.net/marketing/how_dhime_works.mp4" type="video/mp4">
       </video>
@@ -308,7 +311,9 @@
       <h1>Use Dhime on Mobiles & Computers</h1>
     </div>
     <div class="container col-12 col-sm-8 col-xl-4 row text-center mx-auto">
-      <img class="" src="img/availability2.png" alt="" />
+      <img class="lazyload" data-src="img/availability2-1080.webp" data-sizes="auto"
+        data-srcset="img/availability2-1080.webp 1080w, img/availability2-810.webp 810w, img/availability2-540.webp 540w, img/availability2-270 270w"
+        alt="" />
     </div>
     <div class="container col-12 col-sm-8 col-xl-4 row text-center mx-auto">
       <div class="container-fluid col-4">
@@ -532,6 +537,8 @@
 
 </body>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./node_modules/lazysizes/lazysizes.min.js" async=""></script>
+<!--script src="./node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.min.js"></script-->
 <script type="module" src="firebase.js"></script>
 
 </html>
