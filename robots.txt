@@ -11,4 +11,16 @@ Disallow: /test.html
 Disallow: /android_app.html
 Disallow: /.well-known/
 
+User-agent: LinkedInBot
+Disallow:
+Disallow: /node_modules/
+Disallow: /v1/
+Disallow: /fileserver.py
+Disallow: /app/
+Disallow: /privacy.html
+Disallow: /delete.html
+Disallow: /test.html
+Disallow: /android_app.html
+Disallow: /.well-known/
+
 Sitemap: https://www.dhime.in/sitemap.xml
